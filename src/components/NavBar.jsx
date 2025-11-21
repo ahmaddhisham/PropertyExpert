@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,18 +9,18 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center">
-            <a href="/" className="text-2xl font-bold text-green-700 dark:text-green-400">
+          <div className="flex items-center">
+            <NavLink to="/" className="text-2xl font-bold text-green-700 dark:text-green-400">
               MyLogo
-            </a>
+            </NavLink>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6 items-center">
-            <a href="#home" className="text-gray-700 dark:text-gray-200 hover:text-green-600">Home</a>
-            <a href="#about" className="text-gray-700 dark:text-gray-200 hover:text-green-600">About</a>
-            <a href="#services" className="text-gray-700 dark:text-gray-200 hover:text-green-600">Services</a>
-            <a href="#contact" className="text-gray-700 dark:text-gray-200 hover:text-green-600">Contact</a>
+            <NavLink to="/" className="text-gray-700 dark:text-gray-200 hover:text-green-600">Home</NavLink>
+            <NavLink to="/about" className="text-gray-700 dark:text-gray-200 hover:text-green-600">About</NavLink>
+            <NavLink to="/services" className="text-gray-700 dark:text-gray-200 hover:text-green-600">Services</NavLink>
+            <NavLink to="/contact" className="text-gray-700 dark:text-gray-200 hover:text-green-600">Contact</NavLink>
             <button className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md">
               Sign Up
             </button>
@@ -49,10 +50,10 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white dark:bg-gray-900 px-2 pt-2 pb-3 space-y-1 shadow-md">
-          <a href="#home" className="block text-gray-700 dark:text-gray-200 px-3 py-2 rounded-md hover:bg-green-100 dark:hover:bg-gray-800">Home</a>
-          <a href="#about" className="block text-gray-700 dark:text-gray-200 px-3 py-2 rounded-md hover:bg-green-100 dark:hover:bg-gray-800">About</a>
-          <a href="#services" className="block text-gray-700 dark:text-gray-200 px-3 py-2 rounded-md hover:bg-green-100 dark:hover:bg-gray-800">Services</a>
-          <a href="#contact" className="block text-gray-700 dark:text-gray-200 px-3 py-2 rounded-md hover:bg-green-100 dark:hover:bg-gray-800">Contact</a>
+          <NavLink to="/home" className="block text-gray-700 dark:text-gray-200 px-3 py-2 rounded-md hover:bg-green-100 dark:hover:bg-gray-800">Home</NavLink>
+          <NavLink to="/about" className="block text-gray-700 dark:text-gray-200 px-3 py-2 rounded-md hover:bg-green-100 dark:hover:bg-gray-800">About</NavLink>
+          <NavLink to="/services" className="block text-gray-700 dark:text-gray-200 px-3 py-2 rounded-md hover:bg-green-100 dark:hover:bg-gray-800">Services</NavLink>
+          <NavLink to="/contact" className="block text-gray-700 dark:text-gray-200 px-3 py-2 rounded-md hover:bg-green-100 dark:hover:bg-gray-800">Contact</NavLink>
           <button className="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md">
             Sign Up
           </button>

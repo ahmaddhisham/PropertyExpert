@@ -3,12 +3,14 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import Navbar from './components/NavBar.jsx'
-import HomePage from '../Views/HomePage.jsx'
+import HomePage from './Views/HomePage.jsx'
+import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
+  <BrowserRouter>
   <StrictMode>
     <Navbar />
     <App />
-    <HomePage />
-  </StrictMode>,
+  </StrictMode>
+ </BrowserRouter>
 )

@@ -1,9 +1,11 @@
-import React from 'react'
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./Views/HomePage";
 
-const App = () => {
+
+export default function App() {
   return (
-    <div><h1>App component</h1></div>
-  )
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+    </Routes>
+  );
 }
-
-export default App
