@@ -1,69 +1,10 @@
 import { motion as Motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import properties from "../data/properties";
+
+
 
 export default function BuyProperties() {
-  const properties = [
-    {
-      id: 1,
-      name: "Luxury Sea View Villa",
-      location: "Hurghada, Egypt",
-      price: "$420,000",
-      img: "/beach.jpg",
-    },
-    {
-      id: 2,
-      name: "Modern City Apartment",
-      location: "Cairo, Egypt",
-      price: "$180,000",
-      img: "/modern.jpg",
-    },
-    {
-      id: 3,
-      name: "Desert Resort Home",
-      location: "New Capital, Egypt",
-      price: "$310,000",
-      img: "/compressed-prop2.webp",
-    },    {
-      id: 1,
-      name: "Luxury Sea View Villa",
-      location: "Hurghada, Egypt",
-      price: "$420,000",
-      img: "/beach.jpg",
-    },
-    {
-      id: 2,
-      name: "Modern City Apartment",
-      location: "Cairo, Egypt",
-      price: "$180,000",
-      img: "/modern.jpg",
-    },
-    {
-      id: 3,
-      name: "Desert Resort Home",
-      location: "New Capital, Egypt",
-      price: "$310,000",
-      img: "/compressed-prop2.webp",
-    },    {
-      id: 1,
-      name: "Luxury Sea View Villa",
-      location: "Hurghada, Egypt",
-      price: "$420,000",
-      img: "/beach.jpg",
-    },
-    {
-      id: 2,
-      name: "Modern City Apartment",
-      location: "Cairo, Egypt",
-      price: "$180,000",
-      img: "/modern.jpg",
-    },
-    {
-      id: 3,
-      name: "Desert Resort Home",
-      location: "New Capital, Egypt",
-      price: "$310,000",
-      img: "/compressed-prop2.webp",
-    },
-  ];
 
   return (
     <div className="w-full min-h-screen bg-gray-900 text-white overflow-hidden">
@@ -122,9 +63,11 @@ export default function BuyProperties() {
                 <p className="text-orange-200 font-bold text-lg mb-4">
                   {prop.price}
                 </p>
-                <button className="w-full cursor-pointer hover:text-orange-200">
-                  View Details
-                </button>
+                <Link to={`/property/${prop.id}`}>
+                  <button className="w-full cursor-pointer hover:text-orange-200">
+                    View Details
+                  </button>
+                </Link>
               </div>
             </Motion.div>
           ))}

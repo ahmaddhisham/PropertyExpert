@@ -1,17 +1,10 @@
 import { motion as Motion } from "framer-motion";
+import properties from "../data/properties";
 
 export default function HomePage() {
-const propertyInfo = {
-  id: 1,
-  name: "Modern Family Home",
-  location: "Cairo, Egypt",
-  price: "$250,000",
-};
-    const PropertyImgs = [
-      "/compressed-prop1.webp",
-      "/compressed-prop2.webp",
-     "/compressed-prop3.webp",
-    ];
+  const limit = 3; // number of properties you want to show
+  const limitedProperties = properties.slice(0, limit); // take first 3
+
   return (
     <div className="w-full min-h-screen bg-gray-900 text-white overflow-hidden">
       {/* Hero Section */}
@@ -69,26 +62,23 @@ const propertyInfo = {
         </div>
 
         <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-          {PropertyImgs.map((src, idx) => (
+          {limitedProperties.map((p) => (
               <Motion.div
-                key={idx}
+                key={p.id}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.4, ease: "easeOut" }}
                 className="rounded-2xl overflow-hidden shadow-lg bg-gray-900 will-change-transform"
               >
-              <img
-                src={src}
-                alt={`Property ${idx + 1}`}
-                loading="lazy"
-                className="w-full h-56 object-cover"
-              />
+             <img src={p.img} className="w-full h-56 object-cover" />
               <div className="p-5">
-                <h3 className="text-lg text-orange-200 font-semibold mb-2">{propertyInfo.name}</h3>
-                <p className="text-gray-400 text-sm mb-4">{propertyInfo.location}</p>
-                <p className="text-orange-200 font-bold text-lg mb-4">{propertyInfo.price}</p>
-                <button className="w-full hover:text-orange-200 cursor-pointer">View Details</button>
+                <h3 className="text-lg text-orange-200 font-semibold mb-2">{p.name}</h3>
+                <p className="text-gray-400 text-sm mb-4">{p.location}</p>
+                <p className="text-orange-200 font-bold text-lg mb-4">{p.price}</p>
+                <a href={`/property/${p.id}`} className="w-full block text-center hover:text-orange-300">
+                  View Details
+                </a>     
               </div>
             </Motion.div>
           ))}
