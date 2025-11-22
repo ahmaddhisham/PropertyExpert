@@ -8,9 +8,9 @@ const propertyInfo = {
   price: "$250,000",
 };
     const PropertyImgs = [
-      "/prop1.jpg",
-      "/prop2.jpg",
-     "/prop3.jpg",
+      "/compressed-prop1.webp",
+      "/compressed-prop2.webp",
+     "/compressed-prop3.webp",
     ];
   return (
     <div className="w-full min-h-screen bg-gray-900 text-white overflow-hidden">
@@ -70,16 +70,18 @@ const propertyInfo = {
 
         <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {PropertyImgs.map((src, idx) => (
-            <Motion.div
-              key={idx}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.4 }}
-              className="rounded-2xl overflow-hidden shadow-lg bg-gray-900"
-            >
+              <Motion.div
+                key={idx}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.4, ease: "easeOut" }}
+                className="rounded-2xl overflow-hidden shadow-lg bg-gray-900 will-change-transform"
+              >
               <img
                 src={src}
                 alt={`Property ${idx + 1}`}
+                loading="lazy"
                 className="w-full h-56 object-cover"
               />
               <div className="p-5">
