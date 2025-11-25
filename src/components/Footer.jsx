@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
         {/* Logo + About */}
         <div>
-          <h2 className="text-2xl font-bold text-orange-200 mb-3">EstateHub</h2>
+          <h2 className="text-2xl flex font-bold text-orange-200 mb-3">PropertXprt</h2>
           <p className="text-sm text-gray-400 leading-relaxed">
             Discover premium homes, luxurious villas, and modern apartments across Egypt.
             We help you find the perfect property with ease and confidence.
@@ -32,9 +32,10 @@ export default function Footer() {
       </div>
 
       {/* Bottom */}
-      <div className="text-center text-gray-500 text-sm mt-10 border-t border-gray-800 pt-6">
-        © {new Date().getFullYear()} EstateHub. All Rights Reserved.
+      <div className="text-center flex text-gray-500 text-sm mt-10 border-t border-gray-800 pt-6">
+       <img src="/p-logo.png" alt="logo" className="w-8 h-8" /> © {new Date().getFullYear()} PropertyXprt. All Rights Reserved.
       </div>
+      
     </footer>
   );
 }

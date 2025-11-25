@@ -4,6 +4,7 @@ const properties = [
     name: "Modern Family Home",
     location: "Cairo, Egypt",
     price: "$250,000",
+    rent: "$1,500 / month",
     img: "/compressed-prop1.webp",
     description:
       "A beautiful modern home perfect for families. Close to schools, malls, and essential services.",
@@ -14,12 +15,14 @@ const properties = [
       "Parking Space",
       "Modern Kitchen",
     ],
+    type: "House",
   },
   {
     id: 2,
     name: "Luxury Villa",
     location: "Giza, Egypt",
     price: "$400,000",
+    rent: "$1,500 / month",
     img: "/compressed-prop2.webp",
     description:
       "A premium luxury villa with stunning views, world-class interior design, and elegant surroundings.",
@@ -30,12 +33,14 @@ const properties = [
       "Smart Home Features",
       "Large Balcony",
     ],
+    type: "Villa",
   },
   {
     id: 3,
     name: "Beachfront Apartment",
     location: "Hurghada, Egypt",
     price: "$300,000",
+    rent: "$1,500 / month",
     img: "/compressed-prop3.webp",
     description:
       "A beachfront apartment with a panoramic sea view. Ideal for vacations or rental investment.",
@@ -46,12 +51,14 @@ const properties = [
       "Shared Pool",
       "Security System",
     ],
+    type: "Apartment",
   },
     {
     id: 4,
     name: "Beachfront Apartment",
     location: "Hurghada, Egypt",
     price: "$300,000",
+    rent: "$1,500 / month",
     img: "/compressedprop4.webp",
     description:
       "A beachfront apartment with a panoramic sea view. Ideal for vacations or rental investment.",
@@ -62,12 +69,14 @@ const properties = [
       "Shared Pool",
       "Security System",
     ],
+    type: "Apartment",
   },
       {
     id: 5,
     name: "Beachfront Apartment",
     location: "Hurghada, Egypt",
     price: "$300,000",
+    rent: "$1,500 / month",
     img: "/compressedprop5.webp",
     description:
       "A beachfront apartment with a panoramic sea view. Ideal for vacations or rental investment.",
@@ -78,12 +87,14 @@ const properties = [
       "Shared Pool",
       "Security System",
     ],
+    type: "Apartment",
   },
       {
     id: 6,
     name: "Beachfront Apartment",
     location: "Hurghada, Egypt",
     price: "$300,000",
+    rent: "$1,500 / month",
     img: "/compressedprop6.webp",
     description:
       "A beachfront apartment with a panoramic sea view. Ideal for vacations or rental investment.",
@@ -94,6 +105,7 @@ const properties = [
       "Shared Pool",
       "Security System",
     ],
+    type: "Apartment",
   },
 ];
 

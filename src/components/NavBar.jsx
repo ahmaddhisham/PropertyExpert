@@ -55,11 +55,11 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white dark:bg-gray-900 px-2 pt-2 pb-3 space-y-1 shadow-md">
-          <NavLink to="/home" className="block text-gray-700 dark:text-gray-200 px-3 py-2 rounded-md hover:bg-green-100 dark:hover:bg-gray-800">Home</NavLink>
-          <NavLink to="/about" className="block text-gray-700 dark:text-gray-200 px-3 py-2 rounded-md hover:bg-green-100 dark:hover:bg-gray-800">About</NavLink>
-          <NavLink to="/services" className="block text-gray-700 dark:text-gray-200 px-3 py-2 rounded-md hover:bg-green-100 dark:hover:bg-gray-800">Services</NavLink>
+          <NavLink to="/" className="block text-gray-700 dark:text-gray-200 px-3 py-2 rounded-md hover:bg-green-100 dark:hover:bg-gray-800">Home</NavLink>
+          <NavLink to="/buy" className="block text-gray-700 dark:text-gray-200 px-3 py-2 rounded-md hover:bg-green-100 dark:hover:bg-gray-800">Buy</NavLink>
+          <NavLink to="/rent" className="block text-gray-700 dark:text-gray-200 px-3 py-2 rounded-md hover:bg-green-100 dark:hover:bg-gray-800">Rent</NavLink>
           <NavLink to="/contact" className="block text-gray-700 dark:text-gray-200 px-3 py-2 rounded-md hover:bg-green-100 dark:hover:bg-gray-800">Contact</NavLink>
-          <button className="w-full bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded-md">
+          <button className="w-full bg-orange-300 hover:bg-orange-200 text-black px-4 py-2 rounded-md">
             Sign Up
           </button>
         </div>

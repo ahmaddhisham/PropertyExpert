@@ -1,5 +1,6 @@
 import { motion as Motion } from "framer-motion";
 import properties from "../data/properties";
+import { Link } from "react-router-dom";
 
 export default function HomePage() {
   const limit = 3; // number of properties you want to show
@@ -21,12 +22,14 @@ export default function HomePage() {
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8">
             Explore the best properties in your city with trusted real estate experts.
           </p>
+          <Link to="/buy" className="mr-4">
           <Motion.button 
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="text-lg px-6 py-4 rounded-xl bg-orange-200 text-black cursor-pointer hover:bg-orange-100">
             Browse Properties
           </Motion.button>
+          </Link>
         </Motion.div>
       </section>
 

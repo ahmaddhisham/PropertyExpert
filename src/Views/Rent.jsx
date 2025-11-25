@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import properties from "../data/properties";
 import { useState } from "react";
 
-export default function BuyProperties() {
+export default function Rent() {
   const [filterType, setFilterType] = useState("All");
 
   const filteredProperties =
@@ -17,7 +17,7 @@ export default function BuyProperties() {
       {/* Hero Section */}
       <section
         className="relative w-full h-[70vh] flex items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: "url('/modern.jpg')" }}
+        style={{ backgroundImage: "url('/compressedbg2.webp')" }}
       >
         <div className="absolute inset-0 bg-black/60"></div>
         <Motion.div
@@ -27,7 +27,7 @@ export default function BuyProperties() {
           className="relative z-10 text-center px-4"
         >
           <h1 className="text-4xl md:text-5xl text-orange-200 font-bold mb-4">
-            Properties for Sale
+            Properties for Rent
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-6">
             Browse our premium collection of homes tailored to your lifestyle.
@@ -81,7 +81,7 @@ export default function BuyProperties() {
                 <p className="text-gray-400 text-sm mb-2">{prop.location}</p>
                 <p className="text-gray-400 text-sm mb-2">{prop.type}</p>
                 <p className="text-orange-200 font-bold text-lg mb-4">
-                  {prop.price}
+                  {prop.rent}
                 </p>
                 <Link to={`/property/${prop.id}`}>
                   <button className="w-full cursor-pointer hover:text-orange-200">
