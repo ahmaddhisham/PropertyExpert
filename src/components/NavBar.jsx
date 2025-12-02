@@ -12,7 +12,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <NavLink to="/" className="flex items-center text-2xl font-bold text-yellow-700">
               <img
-                src="/p-logo.png"
+                src="/logogold.png"
                 alt="PropertyExprt logo"
                 className="h-8 w-auto md:h-10"
                 onError={(e) => { e.currentTarget.style.display = 'none'; }}

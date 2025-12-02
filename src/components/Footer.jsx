@@ -33,7 +33,7 @@ export default function Footer() {
 
       {/* Bottom */}
       <div className="text-center flex text-gray-500 text-sm mt-10 border-t border-gray-800 pt-6">
-       <img src="/p-logo.png" alt="logo" className="w-8 h-8" /> © {new Date().getFullYear()} PropertyXprt. All Rights Reserved.
+       <img src="/logogold.png" alt="logo" className="w-18 h-11" /> © {new Date().getFullYear()} PropertyXprt. All Rights Reserved.
       </div>
       
     </footer>
