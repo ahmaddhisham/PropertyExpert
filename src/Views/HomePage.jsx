@@ -87,6 +87,46 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-black px-6 md:px-16">
+        <div className="max-w-6xl mx-auto text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-orange-200">What Our Clients Say</h2>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+          {[
+            {
+              name: "Ahmed Mohamed",
+              role: "Homeowner",
+              content: "EstateHub helped me find my dream home in no time. The process was smooth and professional.",
+            },
+            {
+              name: "Sarah Ali",
+              role: "First-Time Buyer",
+              content: "I couldn't have done it without the expert guidance of their agents. Highly recommended!",
+            },
+            {
+              name: "Youssef Khalil",
+              role: "Property Investor",
+              content: "The team provided excellent insights and helped me make smart investment decisions.",
+            },
+          ].map((testimonial, idx) => (
+            <Motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              className="bg-gray-900 p-8 rounded-xl shadow-md"
+            >
+              <p className="text-gray-300 italic mb-4">"{testimonial.content}"</p>
+              <p className="text-orange-200 font-semibold">{testimonial.name}</p>
+              <p className="text-gray-400 text-sm">{testimonial.role}</p>
+            </Motion.div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
