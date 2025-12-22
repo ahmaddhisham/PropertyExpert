@@ -95,7 +95,7 @@ export default function Contact() {
               <img
                 src={agent.img}
                 alt={agent.name}
-                loading="lazy"
+                loading="eager"
                 className="w-32 h-32 object-cover rounded-full mx-auto mb-4 border-2 border-orange-200"
               />
 
