@@ -36,7 +36,7 @@ export default function PropertyDetails() {
           onClick={() => navigate(-1)}
           className="absolute top-8 left-8 z-10 bg-black/50 text-white px-4 py-2 rounded-lg hover:bg-black/70"
         >
-          ← Back
+          Back
         </button>
 
         <div className="absolute bottom-10 left-10 z-10">
@@ -45,6 +45,18 @@ export default function PropertyDetails() {
           <p className="text-orange-200 font-semibold text-2xl mt-2">
             {property.price}
           </p>
+          {/* Agent Info */}
+          <div className="mt-4">
+            <p className="text-gray-300">Agent: {property.agent.name}</p>
+            <p className="text-gray-300">Phone: {property.agent.phone}</p>
+            {/* call agent button */}
+            <button
+              onClick={() => window.location.href = `tel:${property.agent.phone}`}
+              className="mt-2 bg-orange-200 text-black px-4 py-2 rounded-lg hover:bg-orange-100"
+            >
+              Call Agent
+            </button>
+          </div>
         </div>
       </div>
 

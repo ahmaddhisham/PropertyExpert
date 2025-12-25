@@ -99,7 +99,7 @@ export default function HomePage() {
             {
               name: "Ahmed Mohamed",
               role: "Homeowner",
-              content: "EstateHub helped me find my dream home in no time. The process was smooth and professional.",
+              content: "PropertyXprt helped me find my dream home in no time. The process was smooth and professional.",
             },
             {
               name: "Sarah Ali",

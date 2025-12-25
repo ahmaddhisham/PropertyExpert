@@ -16,6 +16,11 @@ const properties = [
       "Modern Kitchen",
     ],
     type: "House",
+      agent: {
+    name: "Omar Hassan",
+    phone: "+201112223333"
+  }
+
   },
   {
     id: 2,
@@ -34,6 +39,10 @@ const properties = [
       "Large Balcony",
     ],
     type: "Villa",
+      agent: {
+    name: "Omar Hassan",
+    phone: "+201112223333"
+  }
   },
   {
     id: 3,
@@ -52,6 +61,11 @@ const properties = [
       "Security System",
     ],
     type: "Apartment",
+      agent: {
+    name: "Omar Hassan",
+    phone: "+201112223333"
+  }
+
   },
     {
     id: 4,
@@ -70,6 +84,11 @@ const properties = [
       "Security System",
     ],
     type: "Apartment",
+      agent: {
+    name: "Omar Hassan",
+    phone: "+201112223333"
+  }
+
   },
       {
     id: 5,
@@ -88,6 +107,10 @@ const properties = [
       "Security System",
     ],
     type: "Apartment",
+      agent: {
+    name: "Omar Hassan",
+    phone: "+201112223333"
+  }
   },
       {
     id: 6,
@@ -106,6 +129,10 @@ const properties = [
       "Security System",
     ],
     type: "Apartment",
+      agent: {
+    name: "Omar Hassan",
+    phone: "+201112223333"
+  }
   },
 ];
 

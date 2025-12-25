@@ -28,7 +28,7 @@ export default function Footer() {
           <h3 className="text-xl font-semibold text-orange-200 mb-3">Contact Us</h3>
           <p className="text-gray-300 text-sm mb-1">📍 Cairo, Egypt</p>
           <p className="text-gray-300 text-sm mb-1">📞 +20 111 222 3333</p>
-          <p className="text-gray-300 text-sm">✉️ support@estatehub.com</p>
+          <p className="text-gray-300 text-sm">✉️ support@propertyxprt.com</p>
         </div>
       </div>
 
