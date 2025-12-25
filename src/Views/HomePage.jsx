@@ -79,9 +79,9 @@ export default function HomePage() {
                 <h3 className="text-lg text-orange-200 font-semibold mb-2">{p.name}</h3>
                 <p className="text-gray-400 text-sm mb-4">{p.location}</p>
                 <p className="text-orange-200 font-bold text-lg mb-4">{p.price}</p>
-                <a href={`/property/${p.id}`} className="w-full block text-center hover:text-orange-300">
+                <Link to={`/property/${p.id}`} className="w-full block text-center hover:text-orange-300">
                   View Details
-                </a>     
+                </Link>     
               </div>
             </Motion.div>
           ))}
